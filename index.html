@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedro Borges</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo_batman.png" alt="Logo Pedro">
+        </div>
+        <ul>
+            <li><a href="https://github.com/pedroborgespj" target="blank">github</a></li>
+            <li><a href="mailto:pedroborgespj@gmail.com" target="blank">email</a></li>
+            <li><a href="https://wa.me/34998362144" target="blank">whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Pedro Borges</h1>
+                <h5>FullStack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Profissional da área de Engenharia de Software com atuação e experiência em gestão de projetos de
+                    empresas de grande porte. Tenho vivência em coordenação de projetos e equipes, administração de
+                    escopo e prazos, responsável por testes técnicos para a entrada em produção e negociações junto aos
+                    fornecedores, desde o contato inicial até a chegada do produto ao seu destino final.
+                    Dentre minhas habilidades técnicas constam conhecimentos em MS Project, Office, HTML/CSS, Linguagem
+                    JavaScript/Python, Android, e softwares automotivos CANalyzer, DIAnalyzer, CANtool.
+
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
